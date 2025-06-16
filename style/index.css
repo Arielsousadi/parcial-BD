@@ -1,0 +1,41 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle, #1a1a2e, #16213e);
+    color: #f1f1f1;
+}
+
+/* Container principal */
+.container {
+    background-color: #0f3460;
+    border-radius: 12px;
+    padding: 30px;
+    width: 350px;
+    height: auto;
+    display: grid;
+    gap: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    border: 1px solid #e94560;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Formulário */
+.formulario {
+    display: grid;
+    gap: 15px;
+}

@@ -1,0 +1,102 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo da página */
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(145deg, #1e1e2f, #2b2b3c);
+    color: #e0e0e0;
+}
+
+/* Container principal */
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    width: 850px;
+    height: 600px;
+    padding: 30px;
+    background-color: #2c2f4a;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid #00bcd4;
+}
+
+/* Formulário com duas colunas */
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    width: 100%;
+}
+
+/* Lados do formulário */
+.leftSide, .rightSide {
+    display: grid;
+    gap: 20px;
+}
+
+/* Rótulo */
+.loginLabel {
+    font-size: 16px;
+    color: #b0bec5;
+}
+
+/* Input */
+.loginInput {
+    height: 38px;
+    padding: 8px 12px;
+    background-color: #3a3f58;
+    border: 1px solid #555;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.loginInput:focus {
+    border-color: #00bcd4;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+    outline: none;
+}
+
+/* Botão */
+.loginButton {
+    height: 42px;
+    width: 160px;
+    font-size: 17px;
+    font-weight: bold;
+    align-self: center;
+    color: #fff;
+    background: linear-gradient(90deg, #00bcd4, #673ab7);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.loginButton:hover {
+    transform: scale(1.05);
+    background: linear-gradient(90deg, #0097a7, #512da8);
+}
+
+/* Texto de registro */
+.registerText {
+    font-size: 15px;
+    text-align: center;
+    color: #00bcd4;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+/* Espaçamento entre elementos */
+.emptySpace {
+    height: 24px;
+}
